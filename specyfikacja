@@ -1,0 +1,45 @@
+Opis zadania:
+
+Twoim zadaniem jest stworzenie prostej aplikacji do promowania streamerów. W tej aplikacji użytkownicy mogą dodawać swoich ulubionych streamerów wraz z niezbędnymi informacjami. Inni użytkownicy będą mogli oddawać głosy "za" lub "przeciw" danym streamerom. Każda zgłoszona propozycja oraz bieżąca liczba głosów "za" i "przeciw" powinny być przechowywane na serwerze i wyświetlane na interfejsie użytkownika.
+
+Dostępne technologie:
+
+React.js
+Node.js
+Express/nest.js
+Baza danych (preferowany lekki system, aby ułatwić testowanie)
+ORM (jeśli używany)
+Frontend:
+
+Strona 1:
+
+Formularz zgłoszenia streamera: Ten formularz powinien zawierać pola takie jak nazwa streamera, rozwijane menu z wyborem platformy (Twitch/YouTube/TikTok/Kick/Rumble) oraz opis streamera.
+
+Lista streamerów: Ta sekcja powinna wyświetlać listę wszystkich zgłoszonych streamerów wraz z liczbą głosów "za" i "przeciw". Lista ta powinna być aktualizowana na bieżąco wraz z dodawaniem nowych streamerów i oddawaniem głosów.
+
+Strona 2:
+
+Szczegóły streamera: To strona zawierająca szczegóły pojedynczego streamera - nazwa, opis, platforma oraz statyczne zdjęcie (np. https://static-cdn.jtvnw.net/jtv_user_pictures/asmongold-profile_image-f7ddcbd0332f5d28-300x300.png). Nie wymagamy dodawania funkcjonalności do przesyłania zdjęć, ponieważ skomplikowałoby to zadanie, a bez zdjęcia strona byłaby zbyt pusta.
+
+Backend:
+
+POST /streamers: Endpoint do przyjmowania zgłoszeń nowych streamerów z frontendu i przechowywania ich w bazie danych.
+
+GET /streamers: Endpoint do zwracania wszystkich zgłoszonych streamerów w odpowiedzi na żądanie z frontendu.
+
+GET /streamer/[streamerId]: Endpoint do zwracania danych o konkretnym streamerze.
+
+PUT /streamers/[streamerId]/vote: Endpoint do przyjmowania głosu "za" danego streamera i aktualizowania liczby głosów.
+
+Proszę użyć dowolnej lekkiej technologii bazodanowej, preferowana jest SQLite lub MongoDB dla ułatwienia testowania (choć inne opcje są również możliwe, jeśli nie masz doświadczenia z wymienionymi).
+
+Pamiętaj, że to zadanie ma na celu ocenę Twoich umiejętności i zrozumienia programowania full-stack w języku JavaScript przy użyciu React i Node.js.
+
+Co oceniamy:
+
+Jakość kodu - czy Twój kod jest czytelny, skuteczny i wolny od błędów
+Użycie dobrych praktyk - czy Twój kod jest zgodny z akceptowanymi standardami i konwencjami w języku JavaScript? Czy zawiera obsługę błędów i niezbędne walidacje?
+Rozszerzalność kodu - czy Twój kod jest łatwo rozszerzalny? Czy musielibyśmy modyfikować dużą część logiki aplikacji, aby dodać nową funkcję?
+Proszę przesłać wykonane zadanie na GitHub. Nie wahaj się skontaktować ze mną w przypadku jakichkolwiek problemów.
+
+Termin nadsyłania zadania upływa 2 lipca o godzinie 23:59 CET.
